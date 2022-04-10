@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid cadetblue;
+            background-color: coral;
+            /* transition: width 5s linear 2s; */
+            /* <!-- width, kotokhon korlo, ekdom same speed, 2 sec pore shuru korlo--> */
+            /* transition: width 10s; */
+            transition: width 10s ease, height 5s linear;
+        }
+
+        .box:hover {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        Transition
+    </div>
+
+</body>
+
+</html>
